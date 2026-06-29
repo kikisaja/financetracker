@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Finance Tracker</h2>
+        
+        <div class="balance-box">
+            <h3>Total Saldo</h3>
+            <h1 id="total-balance">Rp 0</h1>
+        </div>
+
+        <form id="finance-form">
+            <div class="form-group">
+                <label for="description">Deskripsi</label>
+                <input type="text" id="description" placeholder="Beli kopi, Gaji, dll" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="amount">Jumlah (Rp)</label>
+                <input type="number" id="amount" placeholder="10000" required>
+            </div>
+
+            <div class="form-group">
+                <label for="type">Tipe</label>
+                <select id="type">
+                    <option value="income">Pemasukan</option>
+                    <option value="expense">Pengeluaran</option>
+                </select>
+            </div>
+
+            <button type="submit">Tambah Transaksi</button>
+        </form>
+
+        <div class="history-box">
+            <h3>Riwayat Transaksi</h3>
+            <ul id="transaction-list">
+                <!-- Data akan muncul di sini via JavaScript -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
